@@ -30,7 +30,7 @@ const Problem1 = () => {
           return order.indexOf(a.status) > order.indexOf(b.status) ? -1 : 1;
         });
     
-        // Filter tasks
+        
         return show === 'all' ? sortedTasks : sortedTasks.filter((task) => task.status.toLowerCase() === show);
       };
 
